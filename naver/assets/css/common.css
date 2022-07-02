@@ -72,6 +72,23 @@ a:hover {
   border: 1px solid #000;
 }
 
+/* thumb-dim */
+.thumb-dim {
+  position: relative;
+  display: block;
+}
+.thumb-dim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .1;
+  filter: alpha(opacity=10);
+  background-color: #000;
+}
+
 /* icon */
 i[class^="ico-"],
 i[class*="ico-"] {
@@ -140,6 +157,11 @@ i[class*="ico-"] {
   height: 15px;
   background-position: 0 -419px;
 }
+.ico-play {
+  width: 24px;
+  height: 28px;
+  background-position: 0 -389px;
+}
 
 /* storage */
 .ico-keyboard,
@@ -152,6 +174,8 @@ i[class*="ico-"] {
 .ico-list,
 .ico-tile,
 .ico-set,
+.ico-btn,
+.ico-play,
 #header .logo a::before,
 #header .gnb-list .shop::before,
 #header .gnb-list .shoplive::before,
@@ -160,7 +184,8 @@ i[class*="ico-"] {
 #header .degree-box .max::before,
 .sc-newsstand .group-issue .link-media::after,
 .sc-newsstand .group-title .link-newsstand::before,
-.sc-newsstand .group-title .link-newsstand::after {
+.sc-newsstand .group-title .link-newsstand::after,
+.sc-themecast .group-title .btn-set::before {
   background-image: url("../images/sp-bg.png");
   background-size: 457px 434px;
   background-repeat: no-repeat;
