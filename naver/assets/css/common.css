@@ -89,6 +89,14 @@ a:hover {
   background-color: #000;
 }
 
+/* badge-inner */
+.badge-inner {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* icon */
 i[class^="ico-"],
 i[class*="ico-"] {
@@ -177,6 +185,40 @@ i[class*="ico-"] {
 .btn-next-l .ico-btn {
   background-position: -224px -158px;
 }
+
+.btn-prev .ico-btn2,
+.btn-next .ico-btn2 {
+  width: 6px;
+  height: 9px;
+}
+.btn-prev .ico-btn2 {
+  background-position: -408px -74px;
+}
+.btn-next .ico-btn2 {
+  background-position: -451px -392px;
+}
+.btn-prev-l .ico-btn2,
+.btn-next-l .ico-btn2 {
+  width: 5px;
+  height: 9px;
+}
+.btn-prev-l .ico-btn2 {
+  background-position: -93px -77px;
+}
+.btn-next-l .ico-btn2 {
+  background-position: -79px -77px;
+}
+
+.ico-more {
+  width: 42px;
+  height: 42px;
+  background-position: 0 -345px;
+}
+.ico-naver {
+  width: 60px;
+  height: 12px;
+  background-position: -138px -330px;
+}
 .side-bar {
   display: inline-block;
   width: 1px;
@@ -196,7 +238,10 @@ i[class*="ico-"] {
 .ico-tile,
 .ico-set,
 .ico-btn,
+.ico-btn2,
 .ico-play,
+.ico-more,
+.ico-naver,
 #header .logo a::before,
 #header .gnb-list .shop::before,
 #header .gnb-list .shoplive::before,
@@ -207,7 +252,9 @@ i[class*="ico-"] {
 .sc-newsstand .group-title .link-newsstand::before,
 .sc-newsstand .group-title .link-newsstand::after,
 .sc-themecast .group-title .btn-set::before,
-.sc-themecast .theme-title .title::after {
+.sc-themecast .theme-title .title::after,
+.sc-login .look-area .link-look.id::before,
+.sc-login .look-area .link-join::before {
   background-image: url("../images/sp-bg.png");
   background-size: 457px 434px;
   background-repeat: no-repeat;
