@@ -1,0 +1,288 @@
+@import './reset.css';
+@import './common.css';
+
+/* header */
+#header {
+  position: relative;
+  background-color: #fff;
+  z-index: 100;
+}
+#header .group-top {
+  position: relative;
+  height: 160px;
+  background-color: #fff;
+  border-bottom: 1px solid #e4e8eb;
+}
+#header .group-top .inner {
+  height: 100%;
+}
+#header .group-top .logo-area {
+  position: relative;
+  height: 100%;
+}
+#header .logo-area .logo {
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  margin-top: -32px;
+}
+#header .logo a {
+  display: block;
+}
+#header .logo a::before {
+  content: '';
+  display: inline-block;
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+  vertical-align: top;
+}
+
+#header .search-area {
+  position: absolute;
+  top: 50%;
+  left: 268px;
+  margin-top: -28px;
+}
+#header .search-area .search {
+  position: relative;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  border-radius: 2px;
+}
+#header .search .input-search {
+  width: 444px;
+  height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: 0;
+}
+#header .search .btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 56px;
+  background-color: #19ce60;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+#header .search-area .btn-keyboard,
+#header .search-area .btn-autocomplete {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+#header .search-area .btn-keyboard {
+  right: 84px;
+  width: 36px;
+  z-index: 9;
+}
+#header .search-area .btn-autocomplete {
+  right: 64px;
+  width: 22px;
+}
+#header .btn-keyboard .ico-keyboard,
+#header .btn-autocomplete .ico-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#header .btn-keyboard .ico-keyboard {
+  margin: -6px 0 0 -10px;
+}
+#header .btn-autocomplete .ico-arrow {
+  margin: -2px 0 0 -5px;
+}
+
+#header .service-area {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+}
+#header .service-area::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header .service-area > a {
+  float: left;
+}
+#header .service-area .link-home {
+  font-size: 11px;
+  color: #404040;
+}
+#header .service-area .link-home::after {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-position: -308px -345px;
+  vertical-align: top;
+  margin: -3px 0 0 3px;
+}
+#header .link-junior .ico-junior {
+  margin: 3px;
+}
+#header .link-junior:hover .ico-junior {
+  background-position: -200px -330px;
+}
+#header .service-area .link-happybin {
+  margin-left: 6px;
+}
+#header .link-happybin .ico-happybin {
+  margin: 3px 3px 2px;
+}
+#header .link-happybin:hover .ico-happybin {
+  background-position: -380px -199px;
+}
+#header .service-area .side-bar {
+  float: left;
+  margin: 3px 7px;
+}
+
+#header .group-gnb {
+  height: 52px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+#header .group-gnb::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header .group-gnb .inner {
+  height: 100%;
+}
+#header .group-gnb .gnb-area {
+  float: left;
+  padding: 11px 0;
+}
+#header .group-gnb .gnb-area::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header .gnb-area .gnb-list + .gnb-list,
+#header .gnb-list .gnb-item + .gnb-item {
+  margin-left: 12px;
+}
+#header .gnb-area .gnb-list {
+  float: left;
+}
+#header .gnb-list .gnb-item {
+  float: left;
+}
+#header .gnb-list .link-gnb {
+  display: block;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: -.3px;
+}
+#header .gnb-list.core .link-gnb {
+  color: #03c75a;
+}
+#header .gnb-list .ico-mail {
+  margin: 3px 3px 0 0;
+}
+#header .gnb-list .ico-tv {
+  margin: 9px 0 0;
+}
+#header .gnb-list .shop,
+#header .gnb-list .shoplive {
+  padding: 5px 0;
+}
+#header .gnb-list .shop::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 20px;
+  background-position: -154px -389px;
+}
+#header .gnb-list .shoplive::before {
+  content: '';
+  display: block;
+  width: 54px;
+  height: 20px;
+  background-position: -202px -299px;
+}
+#header .btn-more {
+  float: left;
+  margin-left: 17px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #202020;
+  text-align: right;
+}
+#header .btn-more::after {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  background-position: -444px -339px;
+  margin-left: 7px;
+  vertical-align: 2px;
+}
+
+#header .weather-area {
+  float: right;
+  max-width: 270px;
+  height: 100%;
+  text-align: right;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 12px 0 11px;
+  box-sizing: border-box;
+}
+#header .weather-area::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#header .weather-area .ico-weather {
+  float: left;
+  margin-right: 9px;
+}
+#header .weather-area .current-box {
+  float: left;
+}
+#header .current-box .current {
+  font-size: 15px;
+  vertical-align: top;
+}
+#header .weather-area .degree-box {
+  float: left;
+  margin-left: 9px;
+}
+#header .degree-box .min {
+  color: #2586ee;
+}
+#header .degree-box .max {
+  color: #e9564a;
+}
+#header .degree-box .max::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 11px;
+  background-position: -444px -392px;
+  margin: 0 3px 0 -1px;
+  vertical-align: -1px;
+}
+#header .weather-area .location {
+  float: left;
+  padding-left: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: grey;
+  text-align: right;
+}
