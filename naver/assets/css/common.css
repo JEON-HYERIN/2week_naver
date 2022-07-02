@@ -135,13 +135,6 @@ i[class*="ico-"] {
   height: 29px;
   background-position: -93px 0;
 }
-
-.side-bar {
-  display: inline-block;
-  width: 1px;
-  height: 10px;
-  background-color: #e4e8eb;
-}
 .ico-list {
   width: 14px;
   height: 13px;
@@ -161,6 +154,34 @@ i[class*="ico-"] {
   width: 24px;
   height: 28px;
   background-position: 0 -389px;
+}
+.btn-prev .ico-btn,
+.btn-next .ico-btn {
+  width: 40px;
+  height: 40px;
+}
+.btn-prev .ico-btn {
+  background-position: -44px -345px;
+}
+.btn-next .ico-btn {
+  background-position: -86px -345px;
+}
+.btn-prev-l .ico-btn,
+.btn-next-l .ico-btn {
+  width: 44px;
+  height: 44px;
+}
+.btn-prev-l .ico-btn {
+  background-position: 0 -299px;
+}
+.btn-next-l .ico-btn {
+  background-position: -224px -158px;
+}
+.side-bar {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #e4e8eb;
 }
 
 /* storage */
@@ -185,7 +206,8 @@ i[class*="ico-"] {
 .sc-newsstand .group-issue .link-media::after,
 .sc-newsstand .group-title .link-newsstand::before,
 .sc-newsstand .group-title .link-newsstand::after,
-.sc-themecast .group-title .btn-set::before {
+.sc-themecast .group-title .btn-set::before,
+.sc-themecast .theme-title .title::after {
   background-image: url("../images/sp-bg.png");
   background-size: 457px 434px;
   background-repeat: no-repeat;
