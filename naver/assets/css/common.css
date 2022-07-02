@@ -13,6 +13,24 @@ a:hover {
   text-decoration: underline;
 }
 
+/* skip-nav */
+#skip-nav {
+  position: fixed;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+  font-size: 16px;
+  z-index: 100;
+  transition: .3s;
+}
+#skip-nav:focus {
+  top: 0;
+}
+
 .blind {
   position: absolute;
   width: 1px;
@@ -37,8 +55,26 @@ a:hover {
   letter-spacing: -.2px;
 }
 
+/* thumb-bd */
+.thumb-bd {
+  position: relative;
+  display: block;
+}
+.thumb-bd::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .08;
+  filter: alpha(opacity=8);
+  border: 1px solid #000;
+}
+
 /* icon */
-i[class^="ico"] {
+i[class^="ico-"],
+i[class*="ico-"] {
   display: inline-block;
   vertical-align: top;
 }
@@ -89,9 +125,23 @@ i[class^="ico"] {
   height: 10px;
   background-color: #e4e8eb;
 }
+.ico-list {
+  width: 14px;
+  height: 13px;
+  background-position: -49px -419px;
+}
+.ico-tile {
+  width: 13px;
+  height: 13px;
+  background-position: -444px -34px;
+}
+.ico-set {
+  width: 15px;
+  height: 15px;
+  background-position: 0 -419px;
+}
 
 /* storage */
-#header .logo a::before,
 .ico-keyboard,
 .ico-arrow,
 .ico-search,
@@ -99,11 +149,18 @@ i[class^="ico"] {
 .ico-happybin,
 .ico-mail,
 .ico-tv,
+.ico-list,
+.ico-tile,
+.ico-set,
+#header .logo a::before,
 #header .gnb-list .shop::before,
 #header .gnb-list .shoplive::before,
 #header .service-area .link-home::after,
 #header .btn-more::after,
-#header .degree-box .max::before {
+#header .degree-box .max::before,
+.sc-newsstand .group-issue .link-media::after,
+.sc-newsstand .group-title .link-newsstand::before,
+.sc-newsstand .group-title .link-newsstand::after {
   background-image: url("../images/sp-bg.png");
   background-size: 457px 434px;
   background-repeat: no-repeat;
