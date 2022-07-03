@@ -259,7 +259,8 @@ i[class*="ico-"] {
 .sc-themecast .group-title .btn-set::before,
 .sc-themecast .theme-title .title::after,
 .sc-login .look-area .link-look.id::before,
-.sc-login .look-area .link-join::before {
+.sc-login .look-area .link-join::before,
+#footer .group-notice .link-all::after {
   background-image: url("../images/sp-bg.png");
   background-size: 457px 434px;
   background-repeat: no-repeat;
