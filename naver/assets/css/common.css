@@ -197,15 +197,15 @@ i[class*="ico-"] {
 .btn-next .ico-btn2 {
   background-position: -451px -392px;
 }
-.btn-prev-l .ico-btn2,
-.btn-next-l .ico-btn2 {
+.btn-prev .ico-btn3,
+.btn-next .ico-btn3 {
   width: 5px;
   height: 9px;
 }
-.btn-prev-l .ico-btn2 {
+.btn-prev .ico-btn3 {
   background-position: -93px -77px;
 }
-.btn-next-l .ico-btn2 {
+.btn-next .ico-btn3 {
   background-position: -79px -77px;
 }
 
@@ -218,6 +218,11 @@ i[class*="ico-"] {
   width: 60px;
   height: 12px;
   background-position: -138px -330px;
+}
+.ico-onealpha {
+  width: 30px;
+  height: 15px;
+  background-position: -74px -54px;
 }
 .side-bar {
   display: inline-block;
@@ -257,6 +262,17 @@ i[class*="ico-"] {
 .sc-login .look-area .link-join::before {
   background-image: url("../images/sp-bg.png");
   background-size: 457px 434px;
+  background-repeat: no-repeat;
+}
+
+.ico-btn3,
+.ico-onealpha,
+.sc-shopcast .group-title .link-shop::before,
+.sc-shopcast .group-title .link-shop::after,
+.sc-shopcast .group-plusdeal .link-logo::before,
+.sc-shopcast .group-plusdeal .thumb-box + .thumb-box::before {
+  background-image: url("../images/sp-bg2.png");
+  background-size: 107px 101px;
   background-repeat: no-repeat;
 }
 
