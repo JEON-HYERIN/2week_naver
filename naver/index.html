@@ -12,8 +12,15 @@
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 <body>
-
-  <a href="#main" id="skip-nav">본문 바로가기</a>
+  <div id="skip-nav">
+    <a href="#banner">광고배너 바로가기</a>
+    <a href="#newsstand">뉴스스탠드 바로가기</a>
+    <a href="#themecast">주제별 캐스트 바로가기</a>
+    <a href="#login">로그인 바로가기</a>
+    <a href="#sidenews">사이드뉴스 바로가기</a>
+    <a href="#sidebanner">광고배너2 바로가기</a>
+    <a href="#shopcast">쇼핑 캐스트 바로가기</a>
+  </div>
   <div id="wrapper">
     <!-- HEADER -->
     <header id="header">
@@ -153,14 +160,14 @@
     <main id="main">
       <div class="column-left">
         <!-- banner -->
-        <section class="sc-banner">
+        <section id="banner" class="sc-banner">
           <h2 class="blind">광고배너</h2>
           <a href="#" class="thumb-bd">
             <img src="./assets/images/banner.png" alt="[광고]모니터 볼 때 눈부신 고통, 웨일 다크모드로 해결" />
           </a>
         </section>
         <!-- newsstand -->
-        <section class="sc-newsstand">
+        <section id="newsstand" class="sc-newsstand">
           <h2 class="blind">뉴스스탠드</h2>
           <div class="group-issue">
             <div class="issue-area">
@@ -344,7 +351,7 @@
           </div>
         </section>
         <!-- themecast -->
-        <section class="sc-themecast">
+        <section id="themecast" class="sc-themecast">
           <h2 class="blind">주제별 캐스트</h2>
           <div class="theme-head">
             <div class="group-title">
@@ -784,7 +791,7 @@
       </div>
       <div class="column-right">
         <!-- login -->
-        <section class="sc-login">
+        <section id="login" class="sc-login">
           <h2 class="blind">로그인</h2>
           <p class="login-msg">네이버를 더 안전하고 편리하게 이용하세요</p>
           <a href="#" class="link-login">
@@ -800,7 +807,7 @@
           </div>
         </section>
         <!-- sidenews -->
-        <section class="sc-sidenews">
+        <section id="sidenews" class="sc-sidenews">
           <h2 class="blind">사이드뉴스</h2>
           <div class="sidenews-inner">
             <div class="btn-box">
@@ -822,14 +829,14 @@
           </div>
         </section>
         <!-- sidebanner -->
-        <section class="sc-sidebanner">
+        <section id="sidebanner" class="sc-sidebanner">
           <h2 class="blind">광고배너</h2>
           <a href="#" class="thumb-bd">
             <img src="./assets/images/sidebanner.jpg" alt="[광고]N쇼핑X플레이윈도 요새 뭐가 잡히지? 월별X지역별 어종 살펴보기" />
           </a>
         </section>
         <!-- shopcast -->
-        <section class="sc-shopcast">
+        <section id="shopcast" class="sc-shopcast">
           <h2 class="blind">쇼핑 캐스트</h2>
           <div class="shop-head">
             <div class="group-title">
@@ -1377,6 +1384,5 @@
       </div>
     </footer>
   </div>
-
 </body>
 </html>

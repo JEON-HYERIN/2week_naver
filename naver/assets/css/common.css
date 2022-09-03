@@ -15,19 +15,25 @@ a:hover {
 
 /* skip-nav */
 #skip-nav {
-  position: fixed;
-  left: 0;
-  top: -40px;
-  width: 100%;
-  line-height: 40px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, .8);
-  color: #fff;
-  font-size: 16px;
+  position: relative;
   z-index: 100;
-  transition: .3s;
 }
-#skip-nav:focus {
+
+#skip-nav a {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 300px;
+  background: #333;
+  text-align: center;
+  padding: 2px 6px 0 0;
+  font-size: 13px;
+  line-height: 26px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#skip-nav a:focus {
   top: 0;
 }
 
